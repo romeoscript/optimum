@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  position: relative;
+}
+.header-contain {
+  height: 80vh;
+  background-image: url("../images/Crypto_25_Feb_08\ 1.svg");
+  background-position: center;
+  /* background: linear-gradient(155.22deg, rgba(136, 5, 95, 0.2) 23.79%, rgba(9, 64, 115, 0.2) 64.82%, rgba(25, 25, 26, 0.2) 93.5%); */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  width: 100vw;
+}
+
+#main-head #top-links-wrapper li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#main-head #top-links-wrapper li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#main-head {
+  display: flex;
+  align-items: center;
+
+ margin: 0;
+  justify-content: flex-end;
+}
+/* works on other pages  */
+header .card-father {
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  top: 70%;
+  flex-wrap: wrap;
+  right: 0;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+/* works on other pages */
+header .parent {
+  top: 88%;
+}
+header .header-text {
+  color: white;
+  font-size: 40px;
+  font-family: poppins;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 210px;
+  margin-left: 20px;
+}
+
+.floating {
+  width: 20vw;
+  /* height: 139.55px; */
+  height: 50vh;
+  opacity: 0.9;
+  margin-top: -90px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+header .head-text {
+  font-weight: 100;
+  margin-top: 120px !important;
+  display: flex;
+  justify-content: space-around;
+}
+.head-text span {
+  font-weight: 600 !important;
+  font-family: poppins;
+}
+.head-text button {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+/* general header use */
+
+/* body for index page */
+.btc-marque {
+  width: 90%;
+  background-color: grey;
+  height: 80px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.btc-marque img {
+  width: 40px;
+  height: 40px;
+}
+.index-empty {
+  height: 100px;
+}
+
+/* 
+card-section */
+
+.card-section {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  right: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-text {
+  color: white;
+  font-size: 40px;
+  font-family: poppins;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 210px;
+  margin-left: 20px;
+}
+.card-section .card {
+  height: auto;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 34.38%,
+      rgba(165, 51, 255, 0.116) 75.52%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+
+  margin: 10px;
+  border-radius: 5px;
+  width: 350px;
+  box-shadow: 0px 4px 34px 21px rgba(157, 157, 157, 0.06);
+  text-align: center;
+  padding: 10px;
+}
+.card-section .card img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+.card-section .card-text h3 {
+  color: rgba(180deg, #4362cc 0%, #9825f2 100%);
+  color: blue;
+}
+.card-section .card-text p {
+  margin: 10px;
+  color: rgba(127, 96, 152, 1);
+}
+.card-section .card-text button {
+  background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+/* trade options section */
+
+/* .trade-option {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-around;
+}
+.trade-option .trade .trade-icon{
+  border-radius: 50%;
+  box-shadow: 0px 4px 28px -1px #0000001C;
+
+} */
+/* .trade-option .trading{
+  display: flex;
+  width: 40%;
+} */
+/* .trade-option .laptop img{
+  width: 550px;
+}
+.trade-view{
+  border: 2px solid grey;
+  display: flex;
+  margin: 10px;
+} */
+/* footer for all use */
+.trade-option {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  /* margin: 40px; */
+}
+.trade-option .trading {
+  width: 50%;
+}
+.trade-option .laptop img {
+  width: 350px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+button{
+  cursor: pointer;
+}
+.trade-option .trading-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-basis;
+  margin-bottom: 40px;
+}
+.trade-option .trading-content h3 {
+  color: #3e45ff;
+}
+
+.trade-option .trading-content img {
+  margin: 20px;
+}
+/* why us section */
+.why-us {
+  height: 300px;
+  background-image: url("../images/3\ 2.png");
+
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.why-us h2 {
+  margin: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.why-us .why-us-content {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  /* justify-content: space-around; */
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.why-us .why-us-content img {
+  width: 7vw;
+  margin: 20px;
+}
+.why-us .circular {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  position: absolute;
+
+  left: 45%;
+  transform: translate(-50%, -50%);
+  top: 90%;
+}
+.why-us .circular .circular-item {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 0px 4px 22px -1px #00000014;
+}
+.chose-empty {
+  height: 100px;
+}
+.deposits {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 50px;
+  box-shadow: 0px 4px 22px -1px #00000014;
+}
+.deposits .latest h2 {
+  color: #3e45ff;
+  font-size: 17px;
+}
+.deposits .latest .latest-box {
+  background-color: white;
+  width: 400px;
+  height: 450px;
+  border-radius: 7px;
+  overflow-y: scroll;
+  border: 1px solid grey;
+  box-shadow: 0px 4px 22px -1px #00000014;
+}
+.deposits .latest .latest-box .withdraw-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  box-shadow: 0px 4px 22px -1px #00000014;
+}
+.withdraw-container .scroll-amount p {
+  color: lightgreen;
+}
+.withdraw-container .img {
+  display: flex;
+}
+/* box-scroll-bar */
+.deposits .latest .latest-box::-webkit-scrollbar {
+  width: 10px;
+}
+.deposits .latest .latest-box::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+.deposits .latest .latest-box::-webkit-scrollbar-thumb:hover {
+  background: #d9d9d9;
+}
+.deposits .latest .latest-box::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+
+  border-radius: 5px;
+}
+.video-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+  padding: 20px;
+  box-shadow: 0px 4px 22px -1px #00000014;
+  background: #ececec;
+}
+.video-sec {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 34.38%,
+      rgba(165, 51, 255, 0.116) 75.52%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  height: 300px;
+  padding: 20;
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.video-sec button {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+/* .last-box-section {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  position: relative;
+} */
+/* .last-empty {
+  height: 300px;
+  width: 300px; */
+/* background: #f5f5f5; */
+/* background-color: gold;
+  position: absolute;
+} */
+/* .lEmpty {
+  left: 25%;
+  top: 15%;
+} */
+/* .emmy {
+  right: 25%;
+  top: 15%;
+  z-index: -1;
+} */
+/* .last-empty2 {
+  height: 400px;
+  width: 300px;
+  background: #fbb7b7;
+  position: relative;
+} */
+.last-box-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  position: relative;
+}
+.last-box-contain {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 40px;
+}
+.lasty {
+  margin: 10px;
+  background-color: green;
+  height: 33vh;
+  width: 24vw;
+  border-radius: 10px;
+}
+.lasty-in {
+  border-radius: 10px;
+  height: 45vh;
+  width: 30vw;
+  background-color: red;
+  position: absolute;
+}
+video {
+  height: 250px;
+  width: 400px;
+}
+/* box-scroll-bar-end */
+footer .last {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color: rgb(206, 205, 205);
+}
+footer {
+  background-image: url("../images/Crypto_25_Feb_08\ 1.svg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  background-clip: content-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer p {
+  margin-top: 10px;
+}
+footer .explore {
+  padding: 20px;
+  text-transform: capitalize;
+}
+footer .explore .fa {
+  font-size: 20px;
+}
+footer .faq {
+  padding: 40px;
+}
+footer .input {
+  padding: 20px;
+}
+footer .input .input-field p {
+  color: black;
+  margin: 5px;
+}
+footer .input .input-field {
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #e4e4e4;
+  /* opacity: 0.6; */
+}
+footer .input input[type="text"] {
+  padding: 3px;
+  margin: 5px;
+  background: rgb(255, 255, 255);
+  opacity: 1 !important;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+footer .input button {
+  background: rgba(77, 0, 103, 1);
+  padding: 5px 20px;
+  margin-left: 120px;
+  border: none;
+  color: white;
+  font-weight: 400;
+
+  opacity: 1;
+}
+footer .input input[type="text"] ::placeholder {
+  text-align: center;
+  color: white;
+}
+footer .last-hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.body-login {
+  height: 500px;
+}
+/* footer for all use  ends here*/
+
+/* media queries */
+@media (max-width: 900px) {
+  .floating {
+    width: 153px;
+    /* height: 139.55px; */
+    height: 272px;
+  }
+  .trade-option {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    /* margin: 40px; */
+  }
+  .trade-option .trading {
+    width: 100%;
+  }
+  .trade-option .laptop {
+    text-align: center;
+  }
+  .deposits {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .deposits .latest .latest-box {
+    width: 300px;
+    height: 350px;
+  }
+  .deposits .latest {
+    margin-top: 30px;
+  }
+  .video-sec {
+    width: 200px;
+  }
+  video {
+    height: 200px;
+    width: 300px;
+  }
+  .card-section .card {
+    width: 250px;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .last-box-section {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+    position: relative;
+  }
+  .last-empty {
+    height: 200px;
+    width: 200px;
+  }
+  .lEmpty {
+    left: 25%;
+    top: 15%;
+  }
+  .emmy {
+    right: 25%;
+    top: 15%;
+    z-index: -1;
+  }
+  .last-empty2 {
+    height: 300px;
+    width: 300px;
+    background: #fbb7b7;
+    position: relative;
+  }
+  .last-box-sec {
+    display: none;
+  }
+}
+
+@media (max-width: 665px) {
+  .video-section {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  .video-sec {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 34.38%,
+        rgba(165, 51, 255, 0.116) 75.52%
+      ),
+      linear-gradient(0deg, #ffffff, #ffffff);
+    height: 50vh;
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+  }
+  video {
+    width: 80%;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 600px) {
+  #main-head #top-links-wrapper li a {
+    color: white;
+    font-size: 2vw;
+  }
+  #main-head #top-links-wrapper li {
+    padding: 5px;
+  }
+  header .header-text {
+    color: white;
+    font-size: 6.5vw;
+    font-family: poppins;
+  }
+  .header-text button {
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+  .trade-option .trading-content p {
+    font-size: 3vw;
+  }
+  .trade-option .trading-content h3 {
+    font-size: 4vw;
+  }
+  .trade-option .trading-content img {
+    width: 7vw;
+  }
+  .trade-option .laptop img {
+    width: 77vw;
+  }
+
+  .why-us .circular .circular-item {
+    background-color: white;
+    width: 10vh;
+    height: 20vw;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0px 4px 22px -1px #00000014;
+  }
+  .why-us .circular .circular-item:first-child,
+  .why-us .circular .circular-item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 525px) {
+  .floating {
+    margin-top: 20px;
+    width: 100px;
+    /* height: 139.55px; */
+    height: 160px;
+  }
+  video {
+    height: 20vh;
+  }
+}
+@media (max-width: 300px) {
+  .deposits .latest .latest-box {
+    width: 230px;
+    height: 350px;
+  }
+  video {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .floating {
+    width: 57.45px;
+    margin-top: 25px;
+    /* height: 139.55px; */
+    height: 103px;
+  }
+}
