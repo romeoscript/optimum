@@ -7,6 +7,7 @@
   padding: 30px;
   box-shadow: 0px 4px 34px 1px #60606012;
 }
+
 .form-first {
   display: flex;
 
@@ -129,7 +130,11 @@ footer .last-hr {
   display: block;
   margin: auto;
 }
+
 @media (max-width: 710px) {
+  /* .card-father .login-info{
+    flex-direction: column-reverse;
+  } */
   .form-first {
     flex-direction: column;
     width: 100%;

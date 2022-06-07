@@ -13,11 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./login and signup/login.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="/assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="icon" sizes="180x180" href="./assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    
   </head>
   <body>
     <header>
@@ -36,7 +41,7 @@
         <div class="header-text">reach us</div>
 
         <div class="card-father">
-          <div class="login-card">
+          <div class="login-card login-info">
             <div class="box-model">
               <div class="icon">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -82,7 +87,7 @@
                     ?
                   ></textarea
                   ><br />
-                  <button>Chat</button>
+                  <button>E-mail</button>
                 </form>
               </div>
             </div>
@@ -136,5 +141,14 @@
       </div>
       <p class="last">optimum-Finance limited</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+        offset: 300,
+        duration: 1000,
+      }
+      );
+    </script>
   </body>
 </html>
