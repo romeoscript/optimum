@@ -14,7 +14,7 @@ overflow-x: hidden;
 
     text-align: center;
     margin: 40px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ overflow-x: hidden;
 }
 .market-update{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 20px;
     flex-wrap: wrap;

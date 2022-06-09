@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>optimum-Finance|sign-up</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -13,121 +14,122 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
-    <link rel="icon" sizes="180x180" href="../assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
-    
-  </head>
-  <body>
-    <header>
-      <div class="header-contain">
-        <div id="main-head">
-          <ul id="top-links-wrapper">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../market.html">The Market</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="../contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+    </head>
+<body>
+    <div class="header-wrapper">
+        <header class="signup-nav-header">
+            <nav class="nav-link">
+                <ul class="nav-list">
+                    <li class="list-item"><a  href="../index.html">Home</a></li>
+                    <li class="list-item"><a  href="../market.html">The Market</a></li>
+                    <li class="list-item"><a  href=".">Sign Up</a></li>
+                    <li class="list-item"><a  href="../about.html">About Us</a></li>
+                    <li class="list-item"><a  href="./login.html">Login</a></li>
+                    <li class="list-item"><a  href="../contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="before-panel">
+            <p><a href="./signup.html" class="signup-breadcrumb">Sign Up</a></p>
+            <img src="../assets/images/earth.png" alt="" class="spin-city">
+        </section>
+         <!-- space div -->
+        <div class="signup-breadcrumb-line-div"></div>
 
-        <div class="header-text"><p>sign-up</p><div class="spin-image"><img src="../assets/images/earth.png" class="spin-city " alt=""></div></div>
+        <section class="signup-panel">
+         <div class="signup-panel-button">
+             <a class="signup-button sign-up" href="./login.html">Sign In</a>
+             <a class="signup-button sign-up" href="./signup.html">Sign Up</a>
+         </div>
+         <form class="form-field">
+             <div class="signup-form-body">
+                <label for="name">Name
+                <input type="text" 
+                class="name-input input"
+                id="name"
+                >
+                </label>
+                <label for="phone_number">Phone Number
+                <input type="number" 
+                class="number-input input"
+                id="number"
+                >
+                </label>
+                <label for="email">E-Mail
+                <input type="email" 
+                class="email-input input"
+                id="email"
+                >
+                </label>
+                <label for="country">Country
+                <input type="text" 
+                class="country-input input"
+                id="country"
+                >
+                </label>
+             </div>
+             <div class="signup-referral-section">
+             <p>Referral Code</p>
+             <div class="code-section">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+             </div>
+             <div class="signup-form-footer">
+             <a href="./signin.html">Sign In</a>
+             <a href="#" class="signup-footer-button">Sign Up</a>
+             </div>
+             <!-- <a class="create-text-action" href="#"> Create An Account </a> -->
+         </form>
+        </section>
+        </div>
+         <!-- space div element -->
+         <div class="signup-line-div"></div>
 
-
-        <div class="card-father">
-          <div class="login-card">
-           <div class="login-contain">
-           <div > <a href="./login.html">sign in </a></div>
-           
-            
-           <div style=" background-color: #eeeeee;"><a href="./signup.html">sign up </a></div>
-            </div>
-         
-            <form action="">
-              <div class="form-div">
-                <div class="form-first">
-                  <div>
-                    <label for="name">Name</label>
-                    <input type="text" />
-                  </div>
-                  <div>
-                    <label for="phone">Phone</label>
-                    <input type="number" />
-                  </div>
-                </div>
-                <div class="form-first">
-                  <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" />
-                  </div>
-                  <div>
-                    <label for="nation">Country</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="refer">
-                  <p>referal code:</p>
-                  <p>
-                    <input type="text" maxlength="1" /><input
-                      type="text"
-                      maxlength="1"
-                    /><input type="text" maxlength="1" /><input
-                      type="text"
-                      maxlength="1"
-                    />
-                    <input type="text" maxlength="1" />
-                  </p>
-                </div>
-                <div class="sign">
-                  <h4><a href="./login.html">sign in</a></h4>
-                  <button><a href="./signup.html">sign up</a></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="body-login"></div>
-    <footer>
-      <div class="footer">
-        <div class="explore">
-          <p>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-          </p>
-          <p><i class="fa fa-whatsapp" aria-hidden="true"></i></p>
-          <p><i class="fa fa-telegram" aria-hidden="true"></i></p>
-          <p><i class="fa fa-phone" aria-hidden="true"></i></p>
-        </div>
-        <div class="explore">
-          <h2>explore</h2>
-          <p>about</p>
-          <p>the market</p>
-          <p>sign up</p>
-          <p>contact us</p>
-          <p>log in</p>
-        </div>
-        <div class="faq">
-          <p>FAQ</p>
-          <p>News</p>
-        </div>
-        <div class="input">
-          NEWSLETTER
-          <div class="input-field">
-            <p>join our newsletter</p>
-            <input type="text" placeholder="enter placeholder" /><br />
-            <button>join</button>
-          </div>
-        </div>
-      </div>
-      <div class="last-hr">
-        <hr />
-      </div>
-      <p class="last">optimum-Finance limited</p>
-    </footer>
-  </body>
+        <!-- site footer -->
+        <footer>
+            <nav class="footer-nav">
+                <ul class="footer-nav-item">
+                    <li class="footet-nav-list"><a href="#">Contact Us</a>
+                        <!-- second navigation layer -->
+                        <ul>
+                            <li><a href="#"><span class="fa fa-map-marker" aria-hidden='true'></span></a></li>
+                            <li><a href="#"><span class="fa fa-telegram" aria-hidden='true'></span></a></li>
+                            <li><a href="#"><span class="fa fa-whatsapp" aria-hidden='true'></span></a></li>
+                            <li><a href="#"><span class="fa fa-phone" aria-hidden='true'></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-list"><a href="#">Explore</a>
+                          <!-- second navigation layer -->
+                          <ul>
+                            <li><a href="./aboutus.html">About Us</a></li>
+                            <li><a href="#">The Market</a></li>
+                            <li><a href="./signup.html">Sign Up</a></li>
+                            <li><a href="./contactus.html">Contact Us</a></li>
+                            <li><a href="./signin.html">Login</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="footet-nav-list"><a href="#">FAQ</a></li> -->
+                    <li class="footer-nav-list">Newsletter
+                        <div class="news-letter-box">
+                        <form>
+                            <label class="newsletter-label" for="newsletter">Join Our News Letter</label>
+                            <input class="newsletter-input" type="text" id="newsletter"
+                             name="newsletter" 
+                             placeholder="Enter E-mail Address"/>
+                            <button class="join-button" type="submit"><a href="#">Join</a></button>
+                        </form>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <small class="footer-copyright">Optimal-Finance Limited</small>
+        </footer>
+</body>
 </html>

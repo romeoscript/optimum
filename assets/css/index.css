@@ -418,6 +418,12 @@ button {
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
+footer li{
+  list-style: none;
+}
+footer li a{
+  text-decoration: none;
+}
 /* .last-box-section {
   display: flex;
   justify-content: center;
@@ -478,7 +484,7 @@ video {
   width: 400px;
 }
 /* box-scroll-bar-end */
-footer .last {
+/* footer .last {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -492,11 +498,13 @@ footer {
   background-repeat: no-repeat;
   color: white;
   background-clip: content-box;
-}
+  padding: 10px;
+} */
 
-.footer {
+/* .footer {
   display: flex;
   justify-content: space-around;
+  margin: 10px;
 }
 footer p {
   margin-top: 10px;
@@ -522,9 +530,9 @@ footer .input .input-field {
   align-items: center;
   padding: 10px 20px;
   border-radius: 20px;
-  background: #e4e4e4;
+  background: #e4e4e4; */
   /* opacity: 0.6; */
-}
+/* }
 footer .input input[type="text"] {
   padding: 3px;
   margin: 5px;
@@ -533,8 +541,8 @@ footer .input input[type="text"] {
   border: none;
   border-radius: 5px;
   text-align: center;
-}
-footer .input button {
+} */
+/* footer .input button {
   background: rgba(77, 0, 103, 1);
   padding: 5px 20px;
   margin-left: 120px;
@@ -555,7 +563,7 @@ footer .last-hr {
   display: block;
   width: 80%;
   margin: auto;
-}
+} */
 .body-login {
   height: 500px;
 }
