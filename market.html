@@ -56,88 +56,42 @@
       </div>
 
       <div class="child-element">
-        <div class="crypto-widget">
-          <div class="embeded">
-            <iframe
-              src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=100&pref_coin_id=1505&graph=yes"
-              width="100%"
-              height="700px"
-              scrolling="auto"
-              marginwidth="0"
-              marginheight="0"
-              frameborder="0"
-              border="0"
-              style="border: 0; margin: 0; padding: 0"
-            ></iframe>
-          </div>
-          <div
-            style="
-              color: #ffffff;
-              line-height: 14px;
-              font-weight: 400;
-              font-size: 11px;
-              box-sizing: border-box;
-              padding: 2px 6px;
-              width: 100%;
-              font-family: Verdana, Tahoma, Arial, sans-serif;
-            "
-          ></div>
-        </div>
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": "100%",
+  "height": "100%",
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "USD",
+  "colorTheme": "light",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+        
       </div>
-    </header>
-    <div class="btc-overview">
+    <div class="market-update">
       <div
-        style="
-          height: 560px;
-          background-color: #ffffff;
-          overflow: hidden;
-          box-sizing: border-box;
-          border: 1px solid #56667f;
-          border-radius: 4px;
-          text-align: right;
-          line-height: 14px;
-          font-size: 12px;
-          font-feature-settings: normal;
-          text-size-adjust: 100%;
-          box-shadow: inset 0 -20px 0 0 #56667f;
-          padding: 1px;
-          padding: 0px;
-          margin: 0px;
-          width: 90%;
-        "
-      >
-        <div style="height: 540px; padding: 0px; margin: 0px; width: 100%">
-          <iframe
-            src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"
-            width="100%"
-            height="536px"
-            scrolling="auto"
-            marginwidth="0"
-            marginheight="0"
-            frameborder="0"
-            border="0"
-            style="border: 0; margin: 0; padding: 0; line-height: 14px"
-          ></iframe>
-        </div>
-        <div
-          style="
-            color: #ffffff;
-            line-height: 14px;
-            font-weight: 400;
-            font-size: 11px;
-            box-sizing: border-box;
-            padding: 2px 6px;
-            width: 100%;
-            font-family: Verdana, Tahoma, Arial, sans-serif;
-          "
-        >
-        </div>
-      </div>
-    </div>
+  id="crypto-widget-CoinList"
+  style="width:100vw; border:2px solid green"
+  data-design="classic"
+  data-coin-ids="29,1,136,1120,382,440,1986">
+</div>
+
+      <div class="nomics-ticker-widget" data-name="Real Crypto" data-base="BRL2" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+      <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+</div>
+
+
+<script src="https://crypto.com/price/static/widget/index.js"></script>
 
     <!-- footer-section -->
 
-    <footer>
+    <!-- <footer>
       <div class="footer">
         <div class="explore">
           <p>
@@ -172,7 +126,7 @@
         <hr />
       </div>
       <p class="last">optimum-Finance limited</p>
-    </footer>
+    </footer> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init(

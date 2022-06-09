@@ -6,37 +6,30 @@ overflow-x: hidden;
     position: absolute;
     top: 80%;
     height: 100%;
-    max-height: 700px;
-    background-color: #ffffff;
-    overflow: hidden;
-    box-sizing: border-box;
-    border: 1px solid #56667f;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 14px;
-    font-size: 12px;
-    font-feature-settings: normal;
-    text-size-adjust: 100%;
-    box-shadow: inset 0 -20px 0 0 #56667f;
-    padding: auto;
-    margin: 0px;
-    width: 90%;
+   padding: 80px;
     margin: 20px;
 }
 .child-element{
+  
+
     text-align: center;
-    margin: auto;
-    padding: auto;
+    margin: 40px;
+    border: 2px solid green;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    height: 600px;
 }
-.crypto-widget .embeded{
-    height: 100%;
-     padding: 0px;
-    margin: 0px;
-     width: 100%"
+.market-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    
     
 }
+
 .btc-overview{
     margin-top: 500px;
     display: flex;
