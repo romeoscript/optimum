@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>market</title>
-    <link rel="stylesheet" href="./login and signup/css/footer.css">
+    <link rel="stylesheet" href="./login and signup/css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -57,80 +57,118 @@
       </div>
 
       <div class="child-element">
-    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-  {
-  "width": "100%",
-  "height": "100%",
-  "defaultColumn": "overview",
-  "screener_type": "crypto_mkt",
-  "displayCurrency": "USD",
-  "colorTheme": "light",
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-        
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+            async
+          >
+              {
+              "width": "100vw",
+              "height": "500px",
+              "defaultColumn": "overview",
+              "screener_type": "crypto_mkt",
+              "displayCurrency": "USD",
+              "colorTheme": "light",
+              "locale": "en"
+            }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
       </div>
-    <div class="market-update">
-      <div
-  id="crypto-widget-CoinList"
-  
-  data-design="classic"
-  data-coin-ids="29,1,136,1120,382,440,1986">
-</div>
+    </header>
 
-      <div class="nomics-ticker-widget" data-name="Real Crypto" data-base="BRL2" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
-      <div class="nomics-ticker-widget" data-name="Bitcoin" data-base="BTC" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
-</div>
+    <div class="market-update"></div>
 
+    <script src="https://crypto.com/price/static/widget/index.js"></script>
 
-<script src="https://crypto.com/price/static/widget/index.js"></script>
-
-
-<footer>
-  <nav class="footer-nav">
-      <ul class="footer-nav-item">
-          <li class="footer-nav-list"><a href="#">Contact Us</a>
-              <!-- second navigation layer -->
-               <ul>
-                  <li><a href="#"><span class="fa fa-map-marker" aria-hidden='true'></span></a></li>
-                  <li><a href="#"><span class="fa fa-telegram" aria-hidden='true'></span></a></li>
-                  <li><a href="#"><span class="fa fa-whatsapp" aria-hidden='true'></span></a></li>
-                  <li><a href="#"><span class="fa fa-phone" aria-hidden='true'></span></a></li>
-              </ul>
+    <script
+      type="text/javascript"
+      src="https://widget.coinlore.com/widgets/new-widget.js"
+    ></script>
+    <div
+      class="coinlore-coin-widget"
+      data-mcap="1"
+      data-mcurrency="usd"
+      data-d7="1"
+      data-cwidth="100%"
+      data-rank="1"
+      data-vol="1"
+      data-id="matic-network"
+      data-bcolor="#fff"
+      data-tcolor="#333"
+      data-ccolor="#333"
+      data-pcolor="#333"
+    ></div>
+    <footer>
+      <nav class="footer-nav">
+        <ul class="footer-nav-item">
+          <li class="footer-nav-list">
+            <a href="#">Contact Us</a>
+            <!-- second navigation layer -->
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="fa fa-map-marker" aria-hidden="true"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="fa fa-telegram" aria-hidden="true"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="fa fa-whatsapp" aria-hidden="true"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="fa fa-phone" aria-hidden="true"></span
+                ></a>
+              </li>
+            </ul>
           </li>
-          <li class="footer-nav-list"><a href="#">Explore</a>
-                <!-- second navigation layer -->
-                <ul>
-                  <li><a href="./about.html">About Us</a></li>
-                  <li><a href="./market.html">The Market</a></li>
-                  <li><a href="./login and signup/signup.html">Sign Up</a></li>
-                  <li><a href="./contact.html">Contact Us</a></li>
-                  <li><a href="./login and signup/login.html">Login</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">News</a></li>
-              </ul>
+          <li class="footer-nav-list">
+            <a href="#">Explore</a>
+            <!-- second navigation layer -->
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./market.html">The Market</a></li>
+              <li><a href="./login and signup/signup.html">Sign Up</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="./login and signup/login.html">Login</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
           </li>
           <!-- <li class="footet-nav-list"><a href="#">FAQ</a></li> -->
-          <li class="footer-nav-list">Newsletter
-              <div class="news-letter-box">
+          <li class="footer-nav-list">
+            Newsletter
+            <div class="news-letter-box">
               <form>
-                  <label class="newsletter-label" for="newsletter">Join Our News Letter</label>
-                  <input class="newsletter-input" type="text" id="newsletter"
-                   name="newsletter" 
-                   placeholder="Enter E-mail Address"/>
-                  <button class="join-button" type="submit"><a href="#">Join</a></button>
+                <label class="newsletter-label" for="newsletter"
+                  >Join Our News Letter</label
+                >
+                <input
+                  class="newsletter-input"
+                  type="text"
+                  id="newsletter"
+                  name="newsletter"
+                  placeholder="Enter E-mail Address"
+                />
+                <button class="join-button" type="submit">
+                  <a href="#">Join</a>
+                </button>
               </form>
-              </div>
+            </div>
           </li>
-      </ul>
-  </nav>
-  <small class="footer-copyright">Optimum-Finance Limited</small>
-</footer>
+        </ul>
+      </nav>
+      <small class="footer-copyright">Optimum-Finance Limited</small>
+    </footer>
 
     <!-- footer-section -->
 
@@ -172,12 +210,10 @@
     </footer> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init(
-        {
+      AOS.init({
         offset: 300,
         duration: 1000,
-      }
-      );
+      });
     </script>
   </body>
 </html>

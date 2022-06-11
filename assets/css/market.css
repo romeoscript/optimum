@@ -3,15 +3,16 @@ body{
 overflow-x: hidden;
 }
 .crypto-widget {
-    position: absolute;
-    top: 80%;
+    
     height: 100%;
    padding: 80px;
     margin: 20px;
 }
 .child-element{
-  
-
+    position: absolute;
+    top: 70%;
+    width: 90%;
+    border-radius: 10px;
     text-align: center;
     margin: 40px;
     /* border: 2px solid green; */
@@ -25,6 +26,7 @@ overflow-x: hidden;
     justify-content: space-around;
     align-items: center;
     margin: 20px;
+    margin-top: 400px;
     flex-wrap: wrap;
     
     

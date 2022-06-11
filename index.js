@@ -1,14 +1,9 @@
-// function addUser(name, age){
-//  console.log(name +' '+ 'ìs' + age)
-// }
-// addUser('daniel',23);
-let daniel = document.getElementById("daniel");
+const toTop = document.querySelector(".to-top");
 
-
-
-function danny() {
-    
-    
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
   }
-  daniel.addEventListener("input", danny);
-  
+})
