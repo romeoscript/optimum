@@ -402,6 +402,81 @@ button {
 
   border-radius: 5px;
 }
+/* about section */
+
+.about{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4;
+ 
+  background: linear-gradient(135deg, #cec9c9, #ececec 100%);
+}
+.about .about-img{
+  position: relative;
+ flex-basis: 46%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.about .about-text{
+  flex-basis: 50%;
+  padding: 50px;
+}
+.about .about-text h1,.about .about-text h3{
+  font-weight: 800;
+  margin: 10px 0;
+  color: #4362CC;
+
+}
+.about .about-text h3 span{
+  color: gold;
+  margin-right: 10px;
+}
+.about .about-text p{
+  margin-bottom: 10px;
+  color:  black;
+  
+}
+
+.about .about-text button{
+    padding: 15px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    );
+}
+.about .about-img img:first-child{
+  width: 350px;
+  height: 350px;
+  animation: spin-city 25s infinite linear;
+ 
+}
+@keyframes spin-city {
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+ .btc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 30%;
+  height: 40%;
+ 
+}
+
+
+
 .video-section {
   display: flex;
   justify-content: space-around;
@@ -718,6 +793,13 @@ video {
 /* footer for all use  ends here*/
 
 /* media queries */
+@media (max-width:1029px) {
+  .why-us .funds {
+   
+    top: 140%;
+  
+  }
+}
 @media (max-width: 900px) {
   .floating {
     width: 153px;
@@ -758,6 +840,11 @@ video {
   }
   .card-section .card {
     width: 250px;
+  }
+  @media (max-width:812px) {
+    .why-us .funds {
+     top: 160%;
+    }
   }
 }
 @media (max-width: 700px) {
@@ -876,6 +963,9 @@ video {
   video {
     height: 20vh;
   }
+  .why-us .funds {
+    top: 190%;
+   }
 }
 @media (max-width: 300px) {
   .deposits .latest .latest-box {
