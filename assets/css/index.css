@@ -224,25 +224,24 @@ header .header-text {
   border-radius: 5px;
   margin: 25px;
 }
-.trade-invest{
+.trade-invest {
   display: flex;
   gap: 10;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.trade-invest .trade-invest-text{
+.trade-invest .trade-invest-text {
   flex-basis: 40%;
-  
 }
-#demo{
+#demo {
   color: green;
   font-size: 70px;
   font-weight: 600;
 }
-.trade-view-container{
+.trade-view-container {
   flex-basis: 45%;
 }
-.trade-invest button{
+.trade-invest button {
   padding: 15px 25px;
   background: radial-gradient(
     60.96% 233.66% at 19.41% -27.87%,
@@ -254,10 +253,10 @@ header .header-text {
   border-radius: 10px;
   margin-top: 10px;
 }
-.trade-invest h2{
+.trade-invest h2 {
   font-weight: 200;
 }
-.trade-invest button a{
+.trade-invest button a {
   color: white;
   text-decoration: none;
 }
@@ -331,8 +330,14 @@ button {
 
 .why-us .funds {
   display: flex;
-  background: radial-gradient(60.96% 233.66% at 19.41% -27.87%, #0F8CFF 0%, #7C3394 51.04%, #4A058A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
- margin: 20px auto;
+  background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  margin: 20px auto;
   justify-content: center;
   position: absolute;
   left: 50%;
@@ -413,80 +418,177 @@ button {
 
   border-radius: 5px;
 }
-/* about section */
-
-.about{
-  margin-top: 50px;
+/* asset-management */
+.asset-management {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 4;
- 
-  background: linear-gradient(135deg, #cec9c9, #ececec 100%);
+  margin: 20px;
+  border: 2px solid red;
+  gap: 5;
+  padding: 10px;
 }
-.about .about-img{
-  position: relative;
- flex-basis: 46%;
+.asset-management .fa{
+  font-size: 50px;
+}
+
+.asset-text {
+  flex-basis: 40%;
+}
+.asset-content svg {
+  width: 40px;
+  cursor: pointer;
+}
+.asset-content {
+  flex-basis: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  border: none;
+}
+.asset-content .asset-files p{
+  font-size: 19px;
+  line-height: 25px;
+}
+.asset-content .asset-files {
+  background: linear-gradient(
+    155.22deg,
+    rgba(136, 5, 95, 0.2) 23.79%,
+    rgba(9, 64, 115, 0.2) 64.82%,
+    rgba(25, 25, 26, 0.2) 93.5%
+  );
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding: 20px;
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  border: none;
+  position: relative;
 }
-.about .about-text{
-  flex-basis: 50%;
-  padding: 50px;
-}
-.about .about-text h1,.about .about-text h3{
-  font-weight: 800;
-  margin: 10px 0;
-  color: #4362CC;
-
-}
-.about .about-text h3 span{
-  color: gold;
-  margin-right: 10px;
-}
-.about .about-text p{
-  margin-bottom: 10px;
-  color:  black;
-  
-}
-
-.about .about-text button{
-    padding: 15px 25px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    background: radial-gradient(
+.asset-files .over-lay {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  overflow: hidden;
+  visibility: visible;
+  height: 0;
+  transition: 0.5s ease;
+  background: radial-gradient(
       60.96% 233.66% at 19.41% -27.87%,
       #0f8cff 0%,
       #7c3394 51.04%,
       #4a058a 100%
     );
 }
-.about .about-img img:first-child{
+.asset-files .text .fa{
+  visibility: hidden;
+}
+.asset-files .text {
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.asset-files:hover .over-lay {
+  visibility: visible;
+  height: 300px;
+}
+.asset-content .files2 {
+  margin: 0px 10px 70px 10px;
+}
+.asset-text button {
+  background: radial-gradient(
+      60.96% 233.66% at 19.41% -27.87%,
+      #0f8cff 0%,
+      #7c3394 51.04%,
+      #4a058a 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 25px;
+}
+/* about section */
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4;
+
+  background: linear-gradient(135deg, #cec9c9, #ececec 100%);
+}
+.about .about-img {
+  position: relative;
+  flex-basis: 46%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-text {
+  flex-basis: 50%;
+  padding: 50px;
+}
+.about .about-text h1,
+.about .about-text h3 {
+  font-weight: 800;
+  margin: 10px 0;
+  color: #4362cc;
+}
+.about .about-text h3 span {
+  color: gold;
+  margin-right: 10px;
+}
+.about .about-text p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.about .about-text button {
+  padding: 15px 25px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: radial-gradient(
+    60.96% 233.66% at 19.41% -27.87%,
+    #0f8cff 0%,
+    #7c3394 51.04%,
+    #4a058a 100%
+  );
+}
+.about .about-img img:first-child {
   width: 350px;
   height: 350px;
   animation: spin-city 25s infinite linear;
- 
 }
 @keyframes spin-city {
-  0%{transform: rotate(0);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
- .btc{
+.btc {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% ,-50%);
+  transform: translate(-50%, -50%);
   width: 30%;
   height: 40%;
- 
 }
-
-
 
 .video-section {
   display: flex;
@@ -494,7 +596,7 @@ button {
   align-items: center;
   margin: 40px;
   padding: 20px;
-  
+
   box-shadow: 0px 4px 22px -1px #00000014;
   background: #ececec;
 }
@@ -512,7 +614,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.video-frame{
+.video-frame {
   flex-basis: 48%;
 }
 .video-sec button {
@@ -530,44 +632,43 @@ button {
 }
 /* stock flex section */
 
-.stock-flex{
+.stock-flex {
   display: flex;
   justify-content: space-around;
   margin: 30px;
   gap: 10;
   flex-wrap: wrap;
   width: 90%;
-
 }
-.stock-flex h3{
+.stock-flex h3 {
   margin: 5px;
   color: #ee20d6;
 }
-.stock-flex p{
+.stock-flex p {
   margin: 5px;
 }
-.stock-flex button{
+.stock-flex button {
   background: radial-gradient(
     60.96% 233.66% at 19.41% -27.87%,
     #0f8cff 0%,
     #7c3394 51.04%,
     #4a058a 100%
   );
-  border-radius:10px;
+  border-radius: 10px;
   padding: 15px 25px;
   border: none;
   color: white;
   font-weight: 400;
   margin: 10px 0;
 }
-.stock-flex button a{
+.stock-flex button a {
   color: white;
   text-decoration: none;
 }
-.livecoinwatch-widget-6{
+.livecoinwatch-widget-6 {
   width: 10px;
 }
-.buy-crypto{
+.buy-crypto {
   flex-basis: 30%;
   border-radius: 10px;
   box-shadow: 0px 4px 22px -1px #00000014;
@@ -789,7 +890,6 @@ footer li a {
   position: relative;
 }
 
-
 .to-top {
   background: purple;
   position: fixed;
@@ -833,11 +933,9 @@ footer li a {
 /* footer for all use  ends here*/
 
 /* media queries */
-@media (max-width:1029px) {
+@media (max-width: 1029px) {
   .why-us .funds {
-   
     top: 140%;
-  
   }
 }
 @media (max-width: 900px) {
@@ -881,19 +979,18 @@ footer li a {
   .card-section .card {
     width: 250px;
   }
-  @media (max-width:812px) {
+  @media (max-width: 812px) {
     .why-us .funds {
-     top: 160%;
+      top: 160%;
     }
   }
 }
-@media (max-width:768px) {
-  .trade-invest{
+@media (max-width: 768px) {
+  .trade-invest {
     display: block;
     padding: 20px;
     margin-bottom: 10px;
   }
-  
 }
 @media (max-width: 700px) {
   .footer {
@@ -1000,12 +1097,12 @@ footer li a {
   .why-us .circular .circular-item:last-child {
     display: none;
   }
-  #demo{
+  #demo {
     font-size: 50px;
   }
 }
 @media (max-width: 525px) {
-  #demo{
+  #demo {
     font-size: 45px;
   }
   .floating {
@@ -1019,10 +1116,10 @@ footer li a {
   }
   .why-us .funds {
     top: 190%;
-   }
+  }
 }
 @media (max-width: 300px) {
-  #demo{
+  #demo {
     font-size: 40px;
   }
   .deposits .latest .latest-box {
