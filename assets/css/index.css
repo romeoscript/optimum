@@ -157,6 +157,7 @@ header .head-text {
   padding: 5px;
 }
 
+
 /* 
 card-section */
 .index-empty {
@@ -238,9 +239,9 @@ header .header-text {
   font-size: 70px;
   font-weight: 600;
 }
-.trade-view-container {
+/* .trade-view-container {
   flex-basis: 45%;
-}
+} */
 .trade-invest button {
   padding: 15px 25px;
   background: radial-gradient(
@@ -1145,6 +1146,10 @@ footer li a {
   }
 }
 @media (max-width: 300px) {
+  .asset-text {
+    
+    padding: 2px;
+}
   #demo {
     font-size: 40px;
   }
@@ -1168,6 +1173,9 @@ footer li a {
   }
 }
 @media (max-width: 768px) {
+  .about{
+    display: block;
+  }
   .asset-management {
     display: block;
     margin: 0;
