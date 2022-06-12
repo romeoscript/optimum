@@ -12,6 +12,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  background: #ececec;
 }
 header {
   position: relative;
@@ -223,33 +224,43 @@ header .header-text {
   border-radius: 5px;
   margin: 25px;
 }
-
-/* trade options section */
-
-/* .trade-option {
+.trade-invest{
   display: flex;
-  margin: 20px;
-  padding: 10px;
+  gap: 10;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.trade-option .trade .trade-icon{
-  border-radius: 50%;
-  box-shadow: 0px 4px 28px -1px #0000001C;
-
-} */
-/* .trade-option .trading{
-  display: flex;
-  width: 40%;
-} */
-/* .trade-option .laptop img{
-  width: 550px;
+.trade-invest .trade-invest-text{
+  flex-basis: 40%;
+  
 }
-.trade-view{
-  border: 2px solid grey;
-  display: flex;
-  margin: 10px;
-} */
-/* footer for all use */
+#demo{
+  color: green;
+  font-size: 70px;
+  font-weight: 600;
+}
+.trade-view-container{
+  flex-basis: 45%;
+}
+.trade-invest button{
+  padding: 15px 25px;
+  background: radial-gradient(
+    60.96% 233.66% at 19.41% -27.87%,
+    #0f8cff 0%,
+    #7c3394 51.04%,
+    #4a058a 100%
+  );
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.trade-invest h2{
+  font-weight: 200;
+}
+.trade-invest button a{
+  color: white;
+  text-decoration: none;
+}
 .trade-option {
   display: flex;
   justify-content: space-around;
@@ -517,7 +528,53 @@ button {
     )
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
+/* stock flex section */
 
+.stock-flex{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  gap: 10;
+  flex-wrap: wrap;
+  width: 90%;
+
+}
+.stock-flex h3{
+  margin: 5px;
+  color: #ee20d6;
+}
+.stock-flex p{
+  margin: 5px;
+}
+.stock-flex button{
+  background: radial-gradient(
+    60.96% 233.66% at 19.41% -27.87%,
+    #0f8cff 0%,
+    #7c3394 51.04%,
+    #4a058a 100%
+  );
+  border-radius:10px;
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.stock-flex button a{
+  color: white;
+  text-decoration: none;
+}
+.livecoinwatch-widget-6{
+  width: 10px;
+}
+.buy-crypto{
+  flex-basis: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 22px -1px #00000014;
+  padding: 20px;
+  background-color: white;
+  margin: 10px;
+}
 /* carousel testimonials */
 section {
   /* background: red; */
@@ -830,6 +887,14 @@ footer li a {
     }
   }
 }
+@media (max-width:768px) {
+  .trade-invest{
+    display: block;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+}
 @media (max-width: 700px) {
   .footer {
     display: grid;
@@ -935,8 +1000,14 @@ footer li a {
   .why-us .circular .circular-item:last-child {
     display: none;
   }
+  #demo{
+    font-size: 50px;
+  }
 }
 @media (max-width: 525px) {
+  #demo{
+    font-size: 45px;
+  }
   .floating {
     margin-top: 20px;
     width: 100px;
@@ -951,6 +1022,9 @@ footer li a {
    }
 }
 @media (max-width: 300px) {
+  #demo{
+    font-size: 40px;
+  }
   .deposits .latest .latest-box {
     width: 230px;
     height: 350px;
