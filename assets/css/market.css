@@ -2,11 +2,10 @@
 body{
 overflow-x: hidden;
 }
-.crypto-widget {
-    
-    height: 100%;
-   padding: 80px;
-    margin: 20px;
+.child-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .child-element{
     position: absolute;
@@ -14,23 +13,21 @@ overflow-x: hidden;
     width: 90%;
     border-radius: 10px;
     text-align: center;
-    margin: 40px;
-    /* border: 2px solid green; */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    height: 600px;
+    height: 100%;
 }
 .market-update{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    margin-top: 400px;
-    flex-wrap: wrap;
-    
+    margin-top: 400px; 
     
 }
+.child-info{
+    position: absolute;
+    top: 70%;
+    width: 90%;
+    height: 50px;
+    background: linear-gradient(135deg, #ee20d6 0%, #0a2fb6 100%);
+    z-index: 1;
+}
+
 
 .btc-overview{
     margin-top: 500px;
