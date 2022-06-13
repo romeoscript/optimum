@@ -302,7 +302,7 @@ button {
 /* why us section */
 .why-us {
   height: 300px;
-  background-image: url("../images/3\ 2.png");
+  background-image: url("../images/3\ 2.jpg");
 
   margin-top: 40px;
   background-repeat: no-repeat;
@@ -1205,8 +1205,8 @@ footer li a {
   }
 }
 #preloader{
-  background:  #800471 url(../../images/preloader2.gif) no-repeat center center;
-  background-size: 10%;
+  background: rgb(209, 209, 209) url(../../images/preloader.gif) no-repeat center center;
+  background-size: 30%;
   height: 100vh;
   width: 100%;
   z-index: 100;
