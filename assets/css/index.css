@@ -1204,3 +1204,11 @@ footer li a {
    display: none;
   }
 }
+#preloader{
+  background:  #800471 url(../../images/preloader2.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}

@@ -26,6 +26,7 @@
     
   </head>
   <body>
+    <div id="preloader"></div>
     <header>
       <div class="header-contain">
         <div id="main-head">
@@ -35,7 +36,7 @@
             <li><a href="./login and signup/signup.html">Sign Up</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./login and signup/login.html">Login</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./investment.html">Investment</a></li>
           </ul>
         </div>
 
@@ -155,5 +156,9 @@
       }
       );
     </script>
+    <script>const loader = document.getElementById('preloader')
+      window.addEventListener('load', ()=>{
+        loader.style.display = "none";
+      })</script>
   </body>
 </html>

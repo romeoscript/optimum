@@ -16,13 +16,14 @@
     />
     </head>
 <body>
+    <div id="preloader"></div>
     <div class="header-wrapper">
         <header class="signup-nav-header">
             <nav class="nav-link">
                 <ul class="nav-list">
                     <li class="list-item"><a  href="../index.html">Home</a></li>
                     <li class="list-item"><a  href="../market.html">The Market</a></li>
-                    <li class="list-item"><a  href=".">Sign Up</a></li>
+                    <li class="list-item"><a  href="../investment.html">Investment</a></li>
                     <li class="list-item"><a  href="../about.html">About Us</a></li>
                     <li class="list-item"><a  href="./login.html">Login</a></li>
                     <li class="list-item"><a  href="../contact.html">Contact us</a></li>
@@ -131,5 +132,9 @@
             </nav>
             <small class="footer-copyright">Optimal-Finance Limited</small>
         </footer>
+        <script>const loader = document.getElementById('preloader')
+            window.addEventListener('load', ()=>{
+              loader.style.display = "none";
+            })</script>
 </body>
 </html>
