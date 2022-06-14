@@ -370,7 +370,169 @@ button {
 .chose-empty {
   height: 100px;
 }
-.deposits {
+/** info-section **/
+.auto-container{
+  position:static;
+  max-width:1170px;
+  padding:0px 15px;
+  margin:0 auto;
+}
+.sec-title{
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.info-section .table{
+  width: 90%;
+}
+
+.sec-title h5{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.sec-title.left h5{
+  padding-right: 55px;
+}
+
+.sec-title.right h5{
+  padding-left: 55px;
+}
+
+.sec-title.centred h5{
+  padding: 0px 55px 0px 55px;
+}
+
+.sec-title.left h5:before{
+  right: 0px;
+}
+
+.sec-title.right h5:before{
+  left: 0px;
+}
+
+.sec-title.centred h5:before{
+  right: 0px;
+}
+
+.sec-title h5:before{
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 2px;
+  top: 12px;
+}
+
+.sec-title.centred h5:after{
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 2px;
+  top: 12px;
+  left: 0px;
+}
+
+.sec-title h2{
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 46px;
+  color: #222;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sec-title.light h5,
+.sec-title.light h2{
+  color: #fff !important;
+}
+
+.sec-title.light h5:before{
+  background: #fff;
+}
+
+.sec-title-two{
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.sec-title-two h5{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #222;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.sec-title-two h2{
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 50px;
+  color: #222;
+  font-weight: 700;
+ 
+}
+
+.sec-title-two.light h5,
+.sec-title-two.light h2{
+  color: #fff;
+}
+
+.sec-title-two h2:before{
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 2px;
+  left: -58px;
+  top: 24px;
+}
+
+.info-section{
+  position: relative;
+  /* padding: 100px 0px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.info-table{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.info-table tr, .info-table td{
+  border: none;
+  padding: 10px 30px;
+}
+.info-table tr:nth-child(even){
+  background-color: white;
+}
+.info-section h2{
+  margin: 10px;
+  text-transform: uppercase;
+}
+.info-table caption{
+  background-color: green;
+  text-align: left;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+/* .deposits {
   display: flex;
   justify-content: space-around;
   margin: 20px;
@@ -402,9 +564,9 @@ button {
 }
 .withdraw-container .img {
   display: flex;
-}
+} */
 /* box-scroll-bar */
-.deposits .latest .latest-box::-webkit-scrollbar {
+/* .deposits .latest .latest-box::-webkit-scrollbar {
   width: 10px;
 }
 .deposits .latest .latest-box::-webkit-scrollbar-track {
@@ -690,7 +852,7 @@ button {
   margin: 10px;
 }
 /* carousel testimonials */
-section {
+.testimonials {
   /* background: red; */
   display: flex;
   align-items: center;
@@ -1145,7 +1307,23 @@ footer li a {
     top: 190%;
   }
 }
+@media (max-width:400px) {
+ 
+  
+ 
+  .info-table tr, .info-table td{
+    border: none;
+    padding: 10px 20px;
+  }
+ 
+  
+}
 @media (max-width: 300px) {
+  
+  .info-table tr, .info-table td{
+    border: none;
+    padding: 10px;
+  }
   .asset-text {
     
     padding: 2px;
