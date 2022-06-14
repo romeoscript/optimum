@@ -532,6 +532,21 @@ button {
   border-radius: 5px;
   margin: 10px 0;
 }
+.section-counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-counter h2{
+  padding: 10px;
+  font-size: 30px;
+  color: purple;
+}
+.section-counter h6{
+  margin: 10px;
+font-size: 30px;
+}
 /* .deposits {
   display: flex;
   justify-content: space-around;
