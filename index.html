@@ -35,7 +35,7 @@
       <div class="header-contain">
         <div id="main-head">
           <ul id="top-links-wrapper">
-            <li><a href="./investment.html">Pricing</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
             <li><a href="./market.html">The Market</a></li>
             <li><a href="./login and signup/signup.html">Sign Up</a></li>
             <li><a href="./about.html">About Us</a></li>
@@ -884,13 +884,16 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-   
     <script>
       var swiper = new Swiper(".swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
         loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",

@@ -19,15 +19,22 @@ header {
 }
 .header-contain {
   height: 80vh;
-  background-image: url("../images/Crypto_25_Feb_08\ 1.svg");
+  
   background-position: center;
+  background-image: url(../images/Crypto_25_Feb_08\ 1.svg);
   /* background: linear-gradient(155.22deg, rgba(136, 5, 95, 0.2) 23.79%, rgba(9, 64, 115, 0.2) 64.82%, rgba(25, 25, 26, 0.2) 93.5%); */
 
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
   width: 100vw;
+  animation: bgchange 20s infinite alternate;
 }
+/* @keyframes bgchange {
+  0%{background-image: url(../../images/romeo.gif);}
+ 
+  100%{background-image: url(../../images/romeo4.gif);}
+}  */
 
 #main-head #top-links-wrapper li {
   text-decoration: none;
@@ -1403,5 +1410,5 @@ footer li a {
   height: 100vh;
   width: 100%;
   z-index: 100;
-  position: fixed;
+ 
 }
