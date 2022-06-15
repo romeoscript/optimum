@@ -1410,5 +1410,12 @@ footer li a {
   height: 100vh;
   width: 100%;
   z-index: 100;
+  position: fixed;
  
+}
+.googletranslate{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  z-index: 1;
 }
