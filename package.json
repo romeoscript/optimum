@@ -1,0 +1,11 @@
+{
+  "name": "optimistic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/romeoscript/optimum.git",
+  "author": "romeoscript <romeobourne211@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@builder.io/partytown": "^0.6.2"
+  }
+}
